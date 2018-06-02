@@ -4,6 +4,8 @@
   "private": true,
   "description": "dnd webpack test",
   "scripts": {
+    "prestart": "npm run webpack:prod",
+    "start": "http-server .",
     "webpack:dev": "cross-env NODE_ENV=dev webpack --config webpack.config.dev.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
@@ -85,6 +87,7 @@
     "gfm.css": "^1.1.1",
     "globcat": "^1.0.3",
     "html-pdf": "^2.1.0",
+    "http-server": "^0.11.1",
     "jest": "^23.0.1",
     "markdown-it": "^8.3.1",
     "node-sass": "^4.5.3",
